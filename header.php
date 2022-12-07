@@ -7,9 +7,8 @@
 
 <body>
     <section class="top">
-
+    
     </section>
-
 
     <style>
         .navbar-toggler-icon i {

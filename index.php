@@ -2,8 +2,6 @@
 session_start();
 $title = "Login";
 include "header.php";
-
-
 ?>
 
 <div class="embod login">
