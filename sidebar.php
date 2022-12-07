@@ -118,7 +118,7 @@
     </ul>
 </aside>
 <style>
-    .side-bar .menu .item {
+    /* .side-bar .menu .item {
         position: relative;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
@@ -143,13 +143,18 @@
 
     .side-bar .menu .item .sub-menu li a:hover {
         color: var(--color-info-dark);
-        /* border-radius: var(--border-radius-1); */
         transition: all .3s ease;
     }
 
     .rotate {
         transform: rotate(90deg);
         transition: all 0.3s ease-in-out;
+    }
+*/
+    .sidebar {
+        background: var(--color-background);
+        padding: 1.2rem;
+        border-radius: var(--border-radius-1);
     }
 </style>
 

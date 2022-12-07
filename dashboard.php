@@ -13,7 +13,6 @@ require "header.php";
                 <h4>Admin dashboard</h4>
             </div>
             <div class="card col-md-3">
-                <!-- <h4>Students</h4> -->
                 <span>
                     <h4>Students</h4>
                     <p>578</p>
@@ -23,7 +22,6 @@ require "header.php";
                 </span>
             </div>
             <div class="card col-md-3">
-                <!-- <h4>Students</h4> -->
                 <span>
                     <h4>Staff</h4>
                     <p>168</p>
@@ -33,7 +31,6 @@ require "header.php";
                 </span>
             </div>
             <div class="card col-md-3">
-                <!-- <h4>Students</h4> -->
                 <span>
                     <h4>Parents</h4>
                     <p>357</p>
@@ -43,7 +40,6 @@ require "header.php";
                 </span>
             </div>
             <div class="card col-md-3">
-                <!-- <h4>Students</h4> -->
                 <span>
                     <h4>Admin</h4>
                     <p>1</p>
@@ -53,7 +49,6 @@ require "header.php";
                 </span>
             </div>
             <div class="card col-md-3">
-                <!-- <h4>Students</h4> -->
                 <span>
                     <h4>Expense</h4>
                     <p>Ugx 120000</p>
@@ -63,7 +58,6 @@ require "header.php";
                 </span>
             </div>
             <div class="card col-md-3">
-                <!-- <h4>Students</h4> -->
                 <span>
                     <h4>Income</h4>
                     <p>Ugx 20000000</p>
