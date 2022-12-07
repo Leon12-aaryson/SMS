@@ -15,6 +15,7 @@ include "header.php";
 ?>
 
 <div class="embod login">
+    <center></center>
     <div class="card col-md-6">
         <form class="col-md-12" method="POST">
             <label for="title" style="font-size: 1.3rem; color: green; text-decoration:underline;">Login</label>

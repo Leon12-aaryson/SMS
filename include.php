@@ -31,24 +31,6 @@
         color: #111e83;
     }
 
-    #performance {
-        font-style: oblique;
-        font-weight: 600;
-    }
-
-    #bstStudents {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color: green;
-        text-decoration: underline;
-    }
-
-    #cuur {
-        font-size: 1.6rem;
-        text-decoration: underline;
-        font-family: 'Courier New', Courier, monospace;
-        font-weight: 600;
-    }
-
     @media (min-width: 250px) and (max-width: 550px) {
         table {
             font-size: 1rem;
