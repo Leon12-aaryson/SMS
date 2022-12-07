@@ -43,7 +43,7 @@ html {
 
 aside {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: var(--color-background);
+    /* background: var(--color-background); */
     padding: 1rem;
     /* 708793012 */
     border-radius: var(--border-radius-1);

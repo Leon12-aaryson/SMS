@@ -7,8 +7,16 @@
 <link rel="stylesheet" href="static/styles/css/about.curr.css">
 <link rel="stylesheet" href="static/styles/css/resut.css">
 <link rel="stylesheet" href="static/styles/css/dashboard.css">
+
+<!-- Bootstrap links -->
 <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="static/bootstrap/css/bootstrap.css">
+
+<!-- CDNS for production -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+<!-- Fontawesome links -->
 <link rel="stylesheet" href="static/fontawesome/css/all.min.css">
 <link rel="stylesheet" href="static/fontawesome/css/fontawesome.min.css">
 <link rel="stylesheet" href="static/styles/css/aos.css">

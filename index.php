@@ -4,14 +4,6 @@ $title = "Login";
 include "header.php";
 
 
-//authentication
-// if ($_SERVER['REQUEST_METHOD'] == "POST") {
-//     $username = filter_input(INPUT_POST, 'username', FILTER_VALIDATE_EMAIL);
-//     $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-//     // $password = filter_input(INPUT_POST, 'password', FILTER_VALIDATE_P)
-//     $password = $_POST['password'];
-// }
-
 ?>
 
 <div class="embod login">
@@ -39,3 +31,7 @@ include "header.php";
             </div>
         </form>
     </div>
+
+    <?php
+    include "footer.php";
+    ?>

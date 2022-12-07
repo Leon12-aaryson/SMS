@@ -6,7 +6,6 @@ require "header.php";
 <div class="row whole">
     <?php
     include "sidebar.php";
-    // include "sidebar1.php";
     ?>
     <div class="col-md-9 ml-4 whole-dash">
         <div class="row dash-detail">

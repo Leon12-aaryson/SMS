@@ -117,57 +117,54 @@
         </li>
     </ul>
 </aside>
-<!-- new sidebar -->
-<aside>
-    <style>
-        .side-bar .menu .item {
-            position: relative;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-        }
+<style>
+    .side-bar .menu .item {
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .side-bar .menu .item a {
-            color: var(--color-primary-variant);
-            text-decoration: none;
-        }
+    .side-bar .menu .item a {
+        color: var(--color-primary-variant);
+        text-decoration: none;
+    }
 
-        .side-bar .menu .item a .dropdown {
-            position: absolute;
-            transition: all 0.3s ease;
-        }
+    .side-bar .menu .item a .dropdown {
+        position: absolute;
+        transition: all 0.3s ease;
+    }
 
-        .side-bar .menu .item .sub-menu {
-            margin-top: .2rem;
-            display: none;
-            background: var(--color-info-light);
-            transition: all .3s ease;
-        }
+    .side-bar .menu .item .sub-menu {
+        margin-top: .2rem;
+        display: none;
+        background: var(--color-info-light);
+        transition: all .3s ease;
+    }
 
-        .side-bar .menu .item .sub-menu li a:hover {
-            color: var(--color-info-dark);
-            /* border-radius: var(--border-radius-1); */
-            transition: all .3s ease;
-        }
+    .side-bar .menu .item .sub-menu li a:hover {
+        color: var(--color-info-dark);
+        /* border-radius: var(--border-radius-1); */
+        transition: all .3s ease;
+    }
 
-        .rotate {
-            transform: rotate(90deg);
-            transition: all 0.3s ease-in-out;
-        }
-    </style>
+    .rotate {
+        transform: rotate(90deg);
+        transition: all 0.3s ease-in-out;
+    }
+</style>
 
-    <script src="static/bootstrap/js/jquery.js"></script>
-    <script src="static/bootstrap/js/bootstrap.min.js"></script>
-    <script src="static/bootstrap/js/bootstrap.min.js.map"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            //jquery for toggle sub menus
-            $('.sub-btn').click(function() {
-                $(this).next('.sub-menu').slideToggle(100);
-                // setTimeout(() => {
-                //     $(this).find('.dropdown').toggleClass('rotate');
-                // }, 100);
-                $(this).find('.dropdown').toggleClass('rotate');
-            });
+<script src="static/bootstrap/js/jquery.js"></script>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/bootstrap/js/bootstrap.min.js.map"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        //jquery for toggle sub menus
+        $('.sub-btn').click(function() {
+            $(this).next('.sub-menu').slideToggle(100);
+            // setTimeout(() => {
+            //     $(this).find('.dropdown').toggleClass('rotate');
+            // }, 100);
+            $(this).find('.dropdown').toggleClass('rotate');
         });
-    </script>
-</aside>
+    });
+</script>
