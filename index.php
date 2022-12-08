@@ -29,22 +29,29 @@ include "header.php";
                 </div>
             </form>
         </div> -->
-    <!-- </center> -->
+<!-- </center> -->
 
-    <div class="logging">
-        <div class="card col-md-6">
-            <form action="" method="post">
-                <div class="form-group">
-                    <label for="my-input">Text</label>
-                    <input id="my-input" class="form-control" type="text" name="">
-                </div>
-            </form>
-        </div>
+<div class="logging">
+    <div class="card p-3 col-6">
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="">Email</label>
+                <input class="form-control" type="email" placeholder="Enter Email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input class="form-control" type="password" placeholder="Enter password" name="password">
+            </div>
+            <button value="LOGIN" name="submit" class="form-group btn btn-primary">LOGIN</button>
+        </form>
     </div>
 
-    <?php
-    include "footer.php";
-    ?>
+</div>
 
-    <style>
-    </style>
+<?php
+include "footer.php";
+?>
+
+<style>
+
+</style>

@@ -42,3 +42,9 @@ console.log(sidebarBtn);
 sidebarBtn.addEventListener("click", () => {
     sidebar.classList.toggle("close");
 });
+
+// let subMenu = document.getElementById("sub-Menu");
+
+// function toggleMenu(){
+//     subMenu.classList.toggle("open-menu")
+// }

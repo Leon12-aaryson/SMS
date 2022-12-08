@@ -118,39 +118,6 @@
     </ul>
 </aside>
 <style>
-    /* .side-bar .menu .item {
-        position: relative;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .side-bar .menu .item a {
-        color: var(--color-primary-variant);
-        text-decoration: none;
-    }
-
-    .side-bar .menu .item a .dropdown {
-        position: absolute;
-        transition: all 0.3s ease;
-    }
-
-    .side-bar .menu .item .sub-menu {
-        margin-top: .2rem;
-        display: none;
-        background: var(--color-info-light);
-        transition: all .3s ease;
-    }
-
-    .side-bar .menu .item .sub-menu li a:hover {
-        color: var(--color-info-dark);
-        transition: all .3s ease;
-    }
-
-    .rotate {
-        transform: rotate(90deg);
-        transition: all 0.3s ease-in-out;
-    }
-*/
     .sidebar {
         background: var(--color-background);
         padding: 1.2rem;

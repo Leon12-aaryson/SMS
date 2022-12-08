@@ -7,22 +7,59 @@
 
 <body>
     <section class="top-nav">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand">OLAM</a>
-            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="my-nav" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">LOGIN<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 2</a>
-                    </li>
+        <nav>
+            <img src="static/uploads/21lib.jpg" alt="" class="logo">
+            <div class="other">
+                <ul>
+                    <li class="SMS_name"></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Settings</a></li>
                 </ul>
+                <img src="static/uploads/21lib.jpg" alt="" class="profile" onclick="toggleMenu()">
+                <div class="sub-menu-wrap" id="sub-Menu">
+                    <div class="profile-menu">
+                        <div class="user-info">
+                            <img src="static/uploads/imagesSMS1.jpg" alt="">
+                            <h5>OLUK AARON LEONARD</h5>
+                        </div>
+                        <hr>
+                        <div class="profile-links">
+                            <li>
+                                <a href="#" class="sub-menu-link">
+                                    <i class="bx bx-cog"></i>
+                                    <span>Inbox</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="sub-menu-link">
+                                    <i class="bx bx-cog"></i>
+                                    <span>Edit Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="sub-menu-link">
+                                    <i class="bx bx-cog"></i>
+                                    <span>Account Setting</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="sub-menu-link">
+                                    <i class="bx bx-cog"></i>
+                                    <span>Logout</span>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
+        <script>
+            let subMenu = document.getElementById("sub-Menu");
+
+            function toggleMenu() {
+                subMenu.classList.toggle("open-menu");
+            }
+        </script>
     </section>
     <?php
     include "footer.php";
