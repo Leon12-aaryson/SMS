@@ -1,4 +1,4 @@
-<aside class="col-md-2 ml-3 side-bar">
+<aside class="col-md-2 ml-2 side-bar">
     <ul class="sidebar ml-2 nav-links menu">
         <li>
             <a href="dashboard.php">

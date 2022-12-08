@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $title = "Admin Dashboard";
 require "header.php";
 ?>

@@ -31,12 +31,6 @@ $sample = $querry->fetchAll(PDO::FETCH_OBJ);
                     <td>Delete</td>
                 </tr>
             </thead>
-            <?php foreach ($sample as $samp) : ?>
-                <p>Name <?= $samp->name; ?></p>
-                <p>Email <?= $samp->email; ?></p>
-                <!-- <p>Contact <?= $samp->contact; ?></p> -->
-                <p>Message: <?= $samp->message; ?></p>
-            <?php endforeach ?>
             <tr>
                 <td>1</td>
                 <td>Form One</td>

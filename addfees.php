@@ -33,56 +33,20 @@ require "header.php";
                             </select>
                         </div>
                         <div class="form-group">
+                            <label for="payment">Total Amount Due</label>
+                            <input type="text" name="DOB" id="payment" class="form-control" placeholder="Amount Paid">
+                        </div>
+                        <div class="form-group">
                             <label for="payment">Amount Paid</label>
                             <input type="text" name="DOB" id="payment" class="form-control" placeholder="Amount Paid">
                         </div>
                         <div class="form-group">
-                            <label for="gender">Gender</label>
-                            <select id="gender" class="form-control" name="gender">
-                                <option class="default">Select</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                            </select>
+                            <label for="payment">Balance</label>
+                            <input type="text" name="DOB" id="payment" class="form-control" placeholder="Amount Paid">
                         </div>
                         <div class="form-group">
-                            <label for="religion">Religion</label>
-                            <input id="religion" class="form-control" type="text" id="religion" name="religion" placeholder="Religion">
-                        </div>
-                        <div class="form-group">
-                            <label for="admdate">Admission Date</label>
-                            <input type="date" name="admdate" id="admdate" class="form-control" placeholder="Admission Date">
-                        </div>
-                        <button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
-                    </form>
-                </div>
-            </div>
-            <div class="card regcard col-md-6 p-2">
-                <div class="card-body">
-                    <h5 class="card-title">Admission Form-B</h5>
-                    <form action="dbparent.php" class="form-group" method="POST">
-                        <div class="form-group">
-                            <label for="pname">Parent Name</label>
-                            <input id="pname" class="form-control" type="text" name="pname">
-                        </div>
-                        <div class="form-group">
-                            <label for="nation">Nationality/Citizenzhip</label>
-                            <input id="nation" class="form-control" type="text" name="nation">
-                        </div>
-                        <div class="form-group">
-                            <label for="ptel">Phone Number</label>
-                            <input id="ptel" class="form-control" type="text" name="ptel">
-                        </div>
-                        <div class="form-group">
-                            <label for="mail">Parent email</label>
-                            <input id="mail" class="form-control" type="text" name="mail">
-                        </div>
-                        <div class="form-group">
-                            <label for="address">Address</label>
-                            <input id="address" class="form-control" type="text" name="address">
-                        </div>
-                        <div class="form-group">
-                            <label for="stud_name">Student Name</label>
-                            <input id="stud_name" class="form-control" type="text" name="stud_name">
+                            <label for="date">Date</label>
+                            <input type="date" name="DOP" id="payment" class="form-control" placeholder="Payment Date">
                         </div>
                         <button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
                     </form>
