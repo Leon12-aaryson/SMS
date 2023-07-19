@@ -1,9 +1,12 @@
 <?php
 session_start();
 $title = "Login";
-include "header.php";
+include "include.php";
 ?>
 
+<style>
+    
+</style>
 <div class="logging">
     <!-- <form action=""> -->
     <form action="logindb.php" method="post">
