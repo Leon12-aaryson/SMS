@@ -1,10 +1,10 @@
 <?php
-$title = "Admin Dashboard";
+$title = "Events";
 require "header.php";
 require "dbconn.php";
 
 // for students table
-$sql = "SELECT * FROM admission";
+$sql = "SELECT * FROM events";
 $querry = $conn->prepare($sql);
 
 $retdata = $querry->execute();
@@ -12,7 +12,7 @@ $retdata = $querry->execute();
 $admit = $querry->fetchAll(PDO::FETCH_OBJ);
 
 // for parents table
-$sql = "SELECT * FROM parents";
+$sql = "SELECT * FROM recent";
 $querry = $conn->prepare($sql);
 
 $retdata = $querry->execute();
@@ -25,19 +25,15 @@ $parent = $querry->fetchAll(PDO::FETCH_OBJ);
     <?php
     include "sidebar.php";
     ?>
-    <div class="col-md-9 ml-4 whole-dash">
+    <div class="col-md-8 ml-4 whole-dash">
         <div class="col-12 clas">
-            <label for="">Student Table</label>
+            <label for="">Upcoming Events</label>
             <table class="table table-striped table-light table-borderless">
                 <thead style="font-weight: 600;">
                     <tr>
                         <td>#</td>
-                        <td>Student Name</td>
-                        <td>Class</td>
-                        <td>DOB</td>
-                        <td>Sex/Gender</td>
-                        <td>Religion</td>
-                        <td>Admission Date</td>
+                        <td>Event Name</td>
+                        <td>Event Date</td>
                         <td>Edit</td>
                         <td>Delete</td>
                     </tr>
@@ -45,12 +41,8 @@ $parent = $querry->fetchAll(PDO::FETCH_OBJ);
                 <?php foreach ($admit as $samp) : ?>
                     <tr>
                         <td><?php echo $samp->id; ?></td>
-                        <td><?php echo $samp->name; ?></td>
-                        <td><?php echo $samp->class; ?></td>
-                        <td><?php echo $samp->DOB; ?></td>
-                        <td><?php echo $samp->gender; ?></td>
-                        <td><?php echo $samp->religion; ?></td>
-                        <td><?php echo $samp->admdate; ?></td>
+                        <td><?php echo $samp->eventname; ?></td>
+                        <td><?php echo $samp->eventdate; ?></td>
                         <td><a href="#" class="text-primary"><i class="fa fa-edit" aria-hidden="true"></i></a></td>
                         <td><a href="#" class="text-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
                     </tr>
@@ -58,17 +50,13 @@ $parent = $querry->fetchAll(PDO::FETCH_OBJ);
             </table>
         </div>
         <div class="col-12 clas">
-            <label for="">Parent's Table</label>
+            <label for="">Recent Events</label>
             <table class="table table-striped table-light table-borderless">
                 <thead style="font-weight: 600;">
                     <tr>
                         <td>#</td>
-                        <td>Parent Name</td>
-                        <td>Nationality</td>
-                        <td>Phone Number</td>
-                        <td>Email</td>
-                        <td>Address</td>
-                        <td>Student Name</td>
+                        <td>Event Name</td>
+                        <td>Date</td>
                         <td>Edit</td>
                         <td>Delete</td>
                     </tr>
@@ -76,12 +64,8 @@ $parent = $querry->fetchAll(PDO::FETCH_OBJ);
                 <?php foreach ($parent as $samp) : ?>
                     <tr>
                         <td><?php echo $samp->id; ?></td>
-                        <td><?php echo $samp->parent_name; ?></td>
-                        <td><?php echo $samp->nationality; ?></td>
-                        <td><?php echo $samp->phone; ?></td>
-                        <td><?php echo $samp->email; ?></td>
-                        <td><?php echo $samp->address; ?></td>
-                        <td><?php echo $samp->student_name; ?></td>
+                        <td><?php echo $samp->eventname; ?></td>
+                        <td><?php echo $samp->eventdate; ?></td>
                         <td><a href="#" class="text-primary"><i class="fa fa-edit" aria-hidden="true"></i></a></td>
                         <td><a href="#" class="text-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
                     </tr>

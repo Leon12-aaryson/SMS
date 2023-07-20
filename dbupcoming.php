@@ -3,18 +3,16 @@ require "dbconn.php";
 
 //contact form data
 if (isset($_POST['submit'])) {
-    $amount = $_POST['amount'];
-    $reason = $_POST['reason'];
-    $expdate = $_POST['expdate'];
+    $eventname = $_POST['eventname'];
+    $eventdate = $_POST['eventdate'];
 
-    $sql = "INSERT INTO expenses (amount, reason, expense_date) VALUES (:amount, :reason, :expdate)";
+    $sql = "INSERT INTO events (eventname, eventdate) VALUES (:eventname, :eventdate)";
     /** @var TYPE_NAME $conn */
     $querry = $conn->prepare($sql);
 
     $data = [
-        ':amount' => $amount,
-        ':reason' => $reason,
-        ':expdate' => $expdate
+        ':eventname' => $eventname,
+        ':eventdate' => $eventdate
     ];
 
     $insertdata = $querry->execute($data);
@@ -24,6 +22,6 @@ if (isset($_POST['submit'])) {
     } else {
         $_SESSION['message'] = "Data insertion failed";
     }
-    header('Location: addexpense.php');
+    header('Location: eventlist.php');
     die();
 }

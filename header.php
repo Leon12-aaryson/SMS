@@ -8,7 +8,7 @@
 <body>
     <section class="top-nav">
         <nav>
-            <img src="static/uploads/21lib.jpg" alt="" class="logo">
+            <img src="#" alt="" class="logo">
             <div class="other">
                 <ul>
                     <li class="SMS_name"></li>

@@ -1,10 +1,17 @@
+<style>
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+</style>
 <?php
-$title = "Admin Dashboard";
+$title = "Admin Gallery";
 require "header.php";
 
 require "dbconn.php";
 
-$sql = "SELECT * FROM inventory";
+$sql = "SELECT * FROM logos";
 $querry = $conn->prepare($sql);
 
 $retdata = $querry->execute();
@@ -17,22 +24,16 @@ $inventory = $querry->fetchAll(PDO::FETCH_OBJ);
     <?php
     include "sidebar.php";
     ?>
-    <div class="col-md-9 ml-4 whole-dash">
-        <!-- <?php
-                include "welcome.php"
-                ?> -->
+    <div class="col-md-8 ml-4 whole-dash">
         <div class="col-12 clas">
-            <label for="">Inventory Table</label>
+            <label for="">Gallery Table</label>
             <table class="table table-striped table-light table-borderless">
                 <thead style="font-weight: 600;">
                     <tr>
                         <td>#</td>
-                        <td>Department</td>
-                        <td>Department Head</td>
-                        <td>Item Name</td>
-                        <td>Date of Purchase</td>
-                        <td>Total Items</td>
-                        <td>Total Expenditure</td>
+                        <td>Organisation</td>
+                        <td>Picture</td>
+                        <td>Upload Date</td>
                         <td>Edit</td>
                         <td>Delete</td>
                     </tr>
@@ -40,12 +41,12 @@ $inventory = $querry->fetchAll(PDO::FETCH_OBJ);
                 <?php foreach ($inventory as $samp) : ?>
                     <tr>
                         <td><?php echo $samp->id; ?></td>
-                        <td><?php echo $samp->dept; ?></td>
-                        <td><?php echo $samp->dept_head; ?></td>
-                        <td><?php echo $samp->item_name; ?></td>
-                        <td><?php echo $samp->date_purchased; ?></td>
-                        <td><?php echo $samp->total; ?></td>
-                        <td>UGX <?php echo $samp->expenditure; ?></td>
+                        <td><?php echo $samp->organisation; ?></td>
+                        <!-- <td><?php echo $samp->picture; ?></td> -->
+                        <td>
+                            <img src="<?php echo $samp->picture; ?>" alt="">
+                        </td>
+                        <td><?php echo $samp->upload_date; ?></td>
                         <td><a href="#" class="text-primary"><i class="fa fa-edit" aria-hidden="true"></i></a></td>
                         <td><a href="#" class="text-danger"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
                     </tr>

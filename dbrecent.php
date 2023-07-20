@@ -3,18 +3,16 @@ require "dbconn.php";
 
 //contact form data
 if (isset($_POST['submit'])) {
-    $class = $_POST['class'];
-    $name = $_POST['name'];
-    $NOS = $_POST['NOS'];
+    $eventname = $_POST['eventname'];
+    $eventdate = $_POST['eventdate'];
 
-    $sql = "INSERT INTO class (class_name, class_teacher, stud_num) VALUES (:class, :name, :NOS)";
+    $sql = "INSERT INTO recent (eventname, eventdate) VALUES (:eventname, :eventdate)";
     /** @var TYPE_NAME $conn */
     $querry = $conn->prepare($sql);
 
     $data = [
-        ':class' => $class,
-        ':name' => $name,
-        ':NOS' => $NOS
+        ':eventname' => $eventname,
+        ':eventdate' => $eventdate
     ];
 
     $insertdata = $querry->execute($data);
@@ -24,6 +22,6 @@ if (isset($_POST['submit'])) {
     } else {
         $_SESSION['message'] = "Data insertion failed";
     }
-    header('Location: addclass.php');
+    header('Location: eventlist.php');
     die();
 }

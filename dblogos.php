@@ -51,16 +51,16 @@ if (isset($_POST["submit"])) {
     // }
     // if (isset($_POST['submit'])) {
     $check = getimagesize($_FILES["picture"]["tmp_name"]);
-    $category = $_POST['category'];
-    // $picture = $_FILES['picture'];
+    $organisation = $_POST['organisation'];
+    // $website = $_POST['website'];
     $upload_date = $_POST['upload_date'];
 
-    $sql = "INSERT INTO gallery (category, picture, upload_date) VALUES (:category, :picture, :upload_date)";
+    $sql = "INSERT INTO logos (organisation, picture, upload_date) VALUES (:organisation, :picture, :upload_date)";
     /** @var TYPE_NAME $conn */
     $querry = $conn->prepare($sql);
 
     $data = [
-        ':category' => $category,
+        ':organisation' => $organisation,
         ':picture' => $target_file,
         ':upload_date' => $upload_date
     ];
@@ -72,6 +72,6 @@ if (isset($_POST["submit"])) {
     } else {
         $_SESSION['message'] = "Data insertion failed";
     }
-    header('Location: galleryupload.php');
+    header('Location: logosupload.php');
     die();
 }

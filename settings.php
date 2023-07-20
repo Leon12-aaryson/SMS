@@ -7,7 +7,7 @@ require "header.php";
     <?php
     include "sidebar.php";
     ?>
-    <div class="col-md-9 ml-4 whole-dash">
+    <div class="col-md-8 ml-4 whole-dash">
         <div class="card regcard col-md-7 p-3">
             <div class="card-body">
                 <h5 class="card-title">System settings</h5>
