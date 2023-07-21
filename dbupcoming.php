@@ -5,14 +5,16 @@ require "dbconn.php";
 if (isset($_POST['submit'])) {
     $eventname = $_POST['eventname'];
     $eventdate = $_POST['eventdate'];
+    $enddate = $_POST['enddate'];
 
-    $sql = "INSERT INTO events (eventname, eventdate) VALUES (:eventname, :eventdate)";
+    $sql = "INSERT INTO events (eventname, eventdate, enddate) VALUES (:eventname, :eventdate, :enddate)";
     /** @var TYPE_NAME $conn */
     $querry = $conn->prepare($sql);
 
     $data = [
         ':eventname' => $eventname,
-        ':eventdate' => $eventdate
+        ':eventdate' => $eventdate,
+        ':enddate' => $enddate
     ];
 
     $insertdata = $querry->execute($data);

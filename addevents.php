@@ -22,7 +22,11 @@ require "header.php";
                         </div>
                         <div class="form-group">
                             <label for="eventdate">Event Date</label>
-                            <input type="date" name="eventdate" id="eventdate" class="form-control" placeholder="Event date">
+                            <input type="date" name="eventdate" id="eventdate" class="form-control" placeholder="Start date">
+                        </div>
+                        <div class="form-group">
+                            <label for="enddate">End Date</label>
+                            <input type="date" name="enddate" id="enddate" class="form-control" placeholder="End date">
                         </div>
                         <button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
                     </form>

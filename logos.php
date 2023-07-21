@@ -1,5 +1,10 @@
 <style>
-    img{
+    /* img {
+        display: none;
+    } */
+
+    table img {
+        display: flex;
         width: 50px;
         height: 50px;
         border-radius: 50%;

@@ -22,8 +22,8 @@
                 <i class='bx bxs-chevron-right dropdown'></i>
             </div>
             <ul class="sub-menu ">
-                <li><a href="logosupload.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Uploads</a></li>
-                <li><a href="logos.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Manage Gallery</a></li>
+                <li><a href="logosupload.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Upload Logo</a></li>
+                <li><a href="logos.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Manage Logos</a></li>
             </ul>
         </li>
         <li class="item">
@@ -38,12 +38,6 @@
                 <li><a href="galleryupload.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Uploads</a></li>
                 <li><a href="galleryadmin.php"><i class="fa fa-angle-double-right" aria-hidden="true"></i>Manage Gallery</a></li>
             </ul>
-        </li>
-        <li>
-            <a href="settings.php">
-                <i class="fa fa-cogs" aria-hidden="true"></i>
-                <span>Setting</span>
-            </a>
         </li>
         <li>
             <a href="login.php">
